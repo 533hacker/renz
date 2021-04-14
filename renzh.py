@@ -410,7 +410,6 @@ def action():
     raw_input('\n\x1b[1;97m[\x1b[1;97mBack\x1b[1;95m]')
     menu()
 for s in idd.split():
-print s
 if s == sp[0]:
 if __name__ == '__main__':
     menu()
