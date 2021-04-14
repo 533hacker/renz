@@ -413,6 +413,7 @@ for s in idd.split():
 if s == sp[0]:
 if __name__ == '__main__':
     menu()
+else:
 os.system('clear')
 os.system('figlet ID ACTIVE')
 print '       ID To Amaya ===> ' + sp[0]
