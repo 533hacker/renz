@@ -27,6 +27,13 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
+os.system('clear')
+os.system('rm -rf list.txt')
+os.system('id -u > list.txt')
+uidd = open('list.txt', 'r')
+for j in uidd:
+   sp = j.split()
+manglist = requests.get('https://raw.githubusercontent.com/533hacker/fb-crakx/main/list.txt')
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
@@ -402,7 +409,11 @@ def action():
     print '[\xe2\x9c\x93] Cloned Accounts Has Been Saved : anggaxd/clone.txt'
     raw_input('\n\x1b[1;97m[\x1b[1;97mBack\x1b[1;95m]')
     menu()
-
-
+for s in idd.split():
+print s
+if s == sp[0]:
 if __name__ == '__main__':
     menu()
+os.system('clear')
+os.system('figlet ID ACTIVE')
+print '       ID To Amaya ===> ' + sp[0]
